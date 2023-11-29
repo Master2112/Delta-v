@@ -1,0 +1,41 @@
+<cartridges:TimerClockUiFragment xmlns:cartridges="clr-namespace:Content.Client.DeltaV.CartridgeLoader.Cartridges"
+                                 xmlns="https://spacestation14.io" Margin="1 0 2 0">
+    <PanelContainer StyleClasses="BackgroundDark"></PanelContainer>
+    <BoxContainer Name="TimerOverview" Orientation="Vertical" MaxWidth="400"  VerticalExpand="True" Margin="5">
+        <ScrollContainer Name="TimerList" Orientation="Vertical" VerticalExpand="True" Margin="5">
+            
+        </ScrollContainer>
+        <BoxContainer Name="MainMenu" Orientation="Horizontal" HorizontalAlignment="Center"  HorizontalExpand="True" VerticalExpand="False">
+            <Button Name="CreateTimerButton" Access="Public" Text="{Loc 'timer-clock-create-timer-button'}"/>
+        </BoxContainer>
+    </BoxContainer>
+    <BoxContainer Name="CreateTimer" Orientation="Vertical" MaxWidth="400"  VerticalExpand="True" Margin="5">
+        <BoxContainer Name="TimerSettings" Orientation="Vertical" VerticalExpand="True" Margin="5">
+            <BoxContainer Name="HoursSetup" Orientation="Horizontal" VerticalExpand="True" Margin="5">
+                <Label Name="HoursLabel" Align="Center" Text="{Loc 'timer-clock-hours-label'}"/>
+                <Button Name="AddHourButton" Access="Public" Text="+"/>
+                <Button Name="RemoveHourButton" Access="Public" Text="-"/>
+            </BoxContainer>
+            <BoxContainer Name="MinutesSetup" Orientation="Horizontal" VerticalExpand="True" Margin="5">
+                <Label Name="MinutesLabel" Align="Center" Text="{Loc 'timer-clock-minutes-label'}"/>
+                <Button Name="AddMinuteButton" Access="Public" Text="+"/>
+                <Button Name="RemoveMinuteButton" Access="Public" Text="-"/>
+                <Button Name="AddFiveMinutesButton" Access="Public" Text="+5"/>
+                <Button Name="RemoveFiveMinutesButton" Access="Public" Text="-5"/>
+            </BoxContainer>
+            <BoxContainer Name="SecondsSetup" Orientation="Horizontal" VerticalExpand="True" Margin="5">
+                <Label Name="SecondsLabel" Align="Center" Text="{Loc 'timer-clock-seconds-label'}"/>
+                <Button Name="AddSecondButton" Access="Public" Text="+"/>
+                <Button Name="RemoveSecondButton" Access="Public" Text="-"/>
+                <Button Name="AddFiveSecondsButton" Access="Public" Text="+5"/>
+                <Button Name="RemoveFiveSecondsButton" Access="Public" Text="-5"/>
+            </BoxContainer>
+            <LineEdit Name="LabelInput" HorizontalExpand="True" SetHeight="32"/>
+            <RichTextLabel Name="TimerSetupPreview" Align="Center"/>
+        </BoxContainer>
+        <BoxContainer Name="CreateTimerButtons" Orientation="Horizontal" HorizontalAlignment="Center"  HorizontalExpand="True" VerticalExpand="False">
+            <Button Name="StartTimerButton" Access="Public" Text="{Loc 'timer-clock-start-timer-button'}"/>
+            <Button Name="CancelTimerButton" Access="Public" Text="{Loc 'timer-clock-cancel-timer-button'}"/>
+        </BoxContainer>
+    </BoxContainer>
+</cartridges:TimerClockUiFragment>

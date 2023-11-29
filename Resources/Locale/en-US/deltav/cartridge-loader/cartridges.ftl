@@ -1,0 +1,12 @@
+timer-clock-program-name = Timer
+timer-clock-create-timer-header = Create a new timer
+timer-clock-delete-button = Delete
+timer-clock-time-up = TIME UP
+timer-clock-create-timer-button = Create New
+timer-clock-start-timer-button = Start
+timer-clock-cancel-timer-button = Cancel
+timer-clock-hours-label = Hours:
+timer-clock-minutes-label = Minutes:
+timer-clock-seconds-label = Seconds:
+timer-clock-label-label = Label:
+timer-clock-no-active-timers = No active timers

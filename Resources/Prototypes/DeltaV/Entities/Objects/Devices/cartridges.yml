@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseItem
+  id: TimerClockCartridge
+  name: timer cartridge
+  description: A cartridge that allows you to set timers.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-clk
+  - type: Icon
+    sprite: DeltaV/Objects/Devices/cartridge.rsi
+    state: cart-clk
+  - type: UIFragment
+    ui: !type:TimerClockUi
+  - type: Cartridge
+    programName: timer-clock-program-name
+    icon:
+      sprite: DeltaV/Icons/clk.rsi
+      state: clk
+  - type: TimerClockCartridge
