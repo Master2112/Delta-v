@@ -28,4 +28,17 @@
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
+  <ItemGroup>
+    <EmbeddedResource Remove="DeltaV\CartridgeLoader\Cartridges\TimerClockUiFragment.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Update="DeltaV\CartridgeLoader\Cartridges\TimerClockUiFragment.xaml">
+      <Generator></Generator>
+    </AdditionalFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DeltaV\CartridgeLoader\Cartridges\TimerClockUiFragment.xaml.cs">
+      <DependentUpon>TimerClockUiFragment.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
