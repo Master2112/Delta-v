@@ -74,7 +74,7 @@ public sealed partial class TimerClockUiFragment : BoxContainer
     {
         _configuringMinutes += amount;
 
-        while(_configuringMinutes >= 60)
+        while (_configuringMinutes >= 60)
         {
             _configuringMinutes -= 60;
             AddHour();
