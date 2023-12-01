@@ -2,7 +2,7 @@
                                  xmlns="https://spacestation14.io" Margin="1 0 2 0">
     <PanelContainer StyleClasses="BackgroundDark"></PanelContainer>
     <BoxContainer Name="TimerOverview" Access="Public" Orientation="Vertical" MaxWidth="400"  VerticalExpand="True" Margin="5">
-        <ScrollContainer Name="TimerList" Orientation="Vertical" VerticalExpand="True" Margin="5">
+        <ScrollContainer Name="TimerList" VerticalExpand="True" Margin="5">
             
         </ScrollContainer>
         <BoxContainer Name="MainMenu" Orientation="Horizontal" HorizontalAlignment="Center"  HorizontalExpand="True" VerticalExpand="False">
@@ -30,8 +30,9 @@
                 <Button Name="AddFiveSecondsButton" Access="Public" Text="+5"/>
                 <Button Name="RemoveFiveSecondsButton" Access="Public" Text="-5"/>
             </BoxContainer>
-            <LineEdit Name="LabelInput" Access="Public" HorizontalExpand="True"/>
-            <RichTextLabel Name="TimerSetupPreview" Access="Public" Align="Center"/>
+            <Label Name="LabelLabel" Text="{Loc 'timer-clock-label-label'}"/>
+            <LineEdit Name="LabelInput" Access="Public" HorizontalExpand="True" Margin="0 0 0 15"/>
+            <RichTextLabel Name="TimerSetupPreview" Access="Public"/>
         </BoxContainer>
         <BoxContainer Name="CreateTimerButtons" Access="Public" Orientation="Horizontal" HorizontalAlignment="Center" HorizontalExpand="True" VerticalExpand="False">
             <Button Name="StartTimerButton" Access="Public" Text="{Loc 'timer-clock-start-timer-button'}"/>
